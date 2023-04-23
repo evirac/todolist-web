@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <h1>Your Todo List</h1>
+        <form id="add-task-form">
+            <input type="text" id="add-task" placeholder="What do you want to do?">
+            <button><i class="bi bi-plus-circle-dotted" id="add-icon"></i></button>
+        </form>
+    </header>
+    <hr><br>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+                <div id="tasks">
+                    <div class="task">
+                        <div class="content">
+                            <input type="text" class="text" value="this is what you wanted to do" readonly >
+                            <div class="action">
+                                <button class="edit"><i class="bi bi-pencil"></i>edit</button>
+                                <button class="delete"><i class="bi bi-trash"></i>delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

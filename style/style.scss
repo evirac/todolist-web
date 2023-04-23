@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+$color-1: #271d2b;
+$color0: #3c2c42;
+$color1: #4a3751;
+$color2: #844d69;
+$color3: #bf6770;
+$color4: #eb8c6a;
+$color5: #ffbe63;
+$color6: #f9f871;
+
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Gochi Hand';
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $color1;
+    color: $color4;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: $color3;
+        margin-bottom: 1rem;
+     }
+}
+
+
+add-task-form{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#add-task{
+    background-color: $color0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: $color5;
+    font-size: 1.25rem;
+    width: 80%;
+
+    &::placeholder{
+        color: $color2;
+    }
+}
+
+#add-icon{
+    color: $color4;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color4, $color1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    cursor: pointer;
+	transition: 0.4s;
+
+    &:hover{
+        opacity: 0.7;
+    }
+    &:active{
+        opacity: 0.5;
+    }
+
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.task-list{
+    padding: 1rem;
+    h2{
+        font-size: 2rem;
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-underline-offset: 0.5rem;
+    }
+}
+
+.task{
+    background-color: $color-1;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+
+    .text{
+        color: $color6;
+        font-size: 1.3rem;
+        width: 60vw;
+    }
+
+    .action{
+        float: right;
+
+        .edit{
+            background-image: linear-gradient(to right, $color2, $color6);
+            -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+        .delete{
+            color: darkred;
+        }
+    }
+}

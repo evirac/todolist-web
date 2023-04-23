@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gochi Hand";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #4a3751;
+  color: #eb8c6a;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #bf6770;
+  margin-bottom: 1rem;
+}
+
+add-task-form {
+  display: flex;
+}
+
+input, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#add-task {
+  background-color: #3c2c42;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: #ffbe63;
+  font-size: 1.25rem;
+  width: 80%;
+}
+#add-task::-moz-placeholder {
+  color: #844d69;
+}
+#add-task::placeholder {
+  color: #844d69;
+}
+
+#add-icon {
+  color: #eb8c6a;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #eb8c6a, #4a3751);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#add-icon:hover {
+  opacity: 0.7;
+}
+#add-icon:active {
+  opacity: 0.5;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+.task-list h2 {
+  font-size: 2rem;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 0.5rem;
+}
+
+.task {
+  background-color: #271d2b;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.task .text {
+  color: #f9f871;
+  font-size: 1.3rem;
+  width: 60vw;
+}
+.task .action {
+  float: right;
+}
+.task .action .edit {
+  background-image: linear-gradient(to right, #844d69, #f9f871);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.task .action .delete {
+  color: darkred;
+}/*# sourceMappingURL=style.css.map */
